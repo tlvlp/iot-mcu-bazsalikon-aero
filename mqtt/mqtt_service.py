@@ -80,7 +80,7 @@ class MqttService:
 
     async def set_last_will(self) -> None:
         print("MQTT service - Setting last will")
-        self.mqtt_client.set_last_will(config.mqtt_topic_checkout, config.mqtt_checkout_payload, qos=config.mqtt_qos)
+        self.mqtt_client.set_last_will(config.mqtt_topic_inactive, config.mqtt_checkout_payload, qos=config.mqtt_qos)
         await asyncio.sleep(0)
 
     async def connect_to_broker(self) -> None:
