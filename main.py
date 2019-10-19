@@ -1,6 +1,7 @@
 from wifi.wifi_service import WifiService
 from mqtt.mqtt_service import MqttService
 from unit.unit_service import UnitService
+from umqtt.simple import MQTTException
 from unit import config
 import uasyncio as asyncio
 import gc
@@ -20,7 +21,7 @@ def main() -> None:
     loop.create_task(garbage_collector_loop())
     try:
         loop.run_forever()
-    except IndexError:
+    except (IndexError, MQTTException):
         # Reset the unit if the task loop runs out of coros and freezes eg in a message flood.
         machine.reset()
 
