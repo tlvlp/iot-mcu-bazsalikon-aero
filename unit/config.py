@@ -16,6 +16,7 @@ irrigation_relay_active_at = 1
 irrigation_on_sec = 120
 irrigation_off_sec = 120
 
+
 # Unit - Scheduling
 gc_collect_interval_sec = 1700
 post_status_interval_sec = 600
@@ -24,7 +25,6 @@ post_status_interval_sec = 600
 wifi_ssid = "PLACEHOLDER"
 wifi_password = "PLACEHOLDER"
 wifi_connection_check_interval_sec = 1
-wifi_ip = "PLACEHOLDER"
 
 # MQTT
 mqtt_connection_check_interval_sec = 1

@@ -35,7 +35,8 @@ class Relay:
     def get_module_id(self) -> str:
         return self.id
 
-    def handle_control_message(self, value: int):
+    def handle_control_message(self, value_str: str):
+        value = int(float(value_str))
         if value == 1:
             self.relay_on()
         elif value == 0:
