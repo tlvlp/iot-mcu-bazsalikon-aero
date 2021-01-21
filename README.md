@@ -1,5 +1,8 @@
 # IoT MCU - BazsalikOn Aero
 
+## LEGACY REPOSITORY!
+This repository is no longer maintained. See the [project summary page](https://github.com/tlvlp/iot-project-summary) for details and updates.
+
 ## Summary
 - Part of the [tlvlp IoT project](https://github.com/tlvlp/iot-project-summary)
 - Implements the MCU side API of the services that is documented at the [iot-mcu-modules](https://github.com/tlvlp/iot-mcu-modules)
